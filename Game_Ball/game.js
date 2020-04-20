@@ -21,10 +21,12 @@ function draw() {
     paddle.drawPaddle();
     paddle.moveToPaddle();
 
-    birck.drawBirck();
+     drawBick();
+    ballCollisionBirck(ball);
 
-    ball.ballCollisionBirck(birck);
+    // ball.ballCollisionBirck(birck);
     ball.ballCollisionPaddle(paddle);
+
     ball.ballCollision();
 
     requestAnimationFrame(draw);// đệ quy

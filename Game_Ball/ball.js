@@ -32,22 +32,22 @@ function Ball(radius, colorBall, xBall, yBall, xSpeedBall, ySpeedBall, statusBal
     };
 
     //va chạm vào vật phẩm( brick)
-    this.ballCollisionBirck = function (birck) {
-        if (!birck.status) {
-            if (this.xBall >= birck.xBirck
-                && this.xBall <= birck.xBirck + birck.widthBirck
-                && this.yBall + this.radius >= birck.yBirck
-                && this.yBall - this.radius <= birck.yBirck + birck.heightBirck) {
-                this.point += 1;
-                if (this.point >= 15) {
-                    this.level++;
-                }
-                this.ySpeedBall = -this.ySpeedBall;
-                birck.status = false;
-
-            }
-        }
-    };
+    // this.ballCollisionBirck = function (birck) {
+    //     if (!birck.status) {
+    //         if (this.xBall >= birck.xBirck
+    //             && this.xBall <= birck.xBirck + birck.widthBirck
+    //             && this.yBall + this.radius >= birck.yBirck
+    //             && this.yBall - this.radius <= birck.yBirck + birck.heightBirck) {
+    //             this.point += 1;
+    //             if (this.point >= 15) {
+    //                 this.level++;
+    //             }
+    //             this.ySpeedBall = -this.ySpeedBall;
+    //             birck.status = true;
+    //
+    //         }
+    //     }
+    // };
     this.drawBall=function () {
         this.moveTo();
         context.beginPath();
