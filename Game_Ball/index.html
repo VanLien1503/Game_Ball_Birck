@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game_Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+    <div class="column">
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+    </div>
+    <div class="column">
+        <table>
+            <tr>
+                <th><h2>Cấp Độ : </h2></th>
+                <td><p id="lv "><h1>1</h1></p></td>
+            </tr>
+            <tr>
+                <th><h2>Điểm : </h2></th>
+                <td><p id="point "><h1>0</h1></p></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="star()">Bắt Đầu</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<script src="shelfBall.js"></script>
+<script src="game.js"></script>
+<script src="brick.js"></script>
+<script src="ball.js"></script>
+</body>
+</html>
